@@ -11,7 +11,7 @@ public class Emp_wage {
          int full_day_hrs = 8;
          int part_time_hrs = 4;
          int working_days =20;
-         int total_Wage = 0;
+         int montlyl_Wage = 0;
          int wage;
          int monthlyWage=0;
          int hours=0;
@@ -25,7 +25,7 @@ public class Emp_wage {
         	 System.out.println("Employee is part time present"); 
              wage = part_time_hrs * wage_per_hrs;
              System.out.println("emp wage : " +wage);
-             total_Wage  = total_Wage + wage;
+             montly_Wage  = montly_Wage + wage;
         	 
          }
          switch (check) {
@@ -33,14 +33,14 @@ public class Emp_wage {
              System.out.println("Employee is full time present"); 
              wage = full_day_hrs * wage_per_hrs;
              System.out.println("emp wage : " +wage);
-             total_Wage  = total_Wage + wage;
+             montly_Wage  = montly_Wage + wage;
              break;
         
          case part_time : 
              System.out.println("Employee is part time present"); 
              wage = part_time_hrs * wage_per_hrs;
              System.out.println("emp wage : " +wage);
-             total_Wage  = total_Wage + wage;
+             montly_Wage  = montly_Wage + wage;
              break;
 	                 
          default:
@@ -48,7 +48,7 @@ public class Emp_wage {
           }
             
         }
-         System.out.println("Total wage for a month is " + total_Wage);
+         System.out.println("Total wage for a month is " + montly_Wage);
          System.out.println("Total working hours : "+ hours);
      	 System.out.println("total working days : "+ days);
      	 
